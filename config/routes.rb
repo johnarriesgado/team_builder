@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :players
+    post 'team/process', to: 'teams#process_team'
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Default route for handling routing errors
+  match '*unmatched_route', to: 'application#route_not_found', via: :all
 end
