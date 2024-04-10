@@ -1,8 +1,6 @@
-# Player selection
+# Team Builder
 
-## IMPORTANT NOTE FOR REQUIREMENT MODIFICATION:
-   
-  * In order to follow the best practice on ROR we have a modification for API Description:
+  * API Description:
     * List Player: API URL should be GET http://localhost:3000/api/players
     * Create Player: API URL should be POST http://localhost:3000/api/players
     * Update Player: API URL should be PUT http://localhost:3000/api/players/[player_id]
@@ -63,21 +61,7 @@
   ]   
   ```
   
-  * Files under `spec` directory provide example test cases. You should read them to figure out how to properly implement the solution and throw exceptions.
-
-  * Other requirements should be the same a Challenge Details link (team url, rule,..)
-
-  * Team Selection:
-    * Same as challenge detail, in case of errors, the body should return the correct error message following this pattern (snake case for the invalid request parameter key):
-        { "message": "Invalid value for [position/main_skill]: [invalid_request_value]" }
-    
-## Build the solution
-
-This solution requires Ruby version: ruby-3.1.0 and SQLite 3 installed.
-
-This challenge does not require any additional library. DO NOT MODIFY the Gemfile or Gemfile.lock file as that may result in a test failure.
-The project already contain a sample SQLite database at /db/development.sqlite3. Please don´t change the database structure by creating a seed or migration file because this may also result in a test failure.
-
+  
 
   * Configuration:
   `bundle` to install library in GEMFILE 
